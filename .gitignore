@@ -1,0 +1,35 @@
+# 공통 설정만 Git 관리 / 새 파일과 폴더는 기본 제외
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/AGENTS.md
+!/CLAUDE.md
+!/docs/
+!/templates/
+
+# 공통 문서 허용 목록
+/docs/*
+!/docs/AI_WORK_HANDOFF.md
+!/docs/PR_FORMAT.md
+!/docs/SETUP.md
+
+# 세부 작업·프로젝트 설정·검토 이력·백업 제외
+/docs/tasks/
+/docs/projects/
+/docs/reviews/
+/docs/local/
+/GIT_AND_CODING_CONVENTIONS.md
+
+# 빈 양식만 공개
+/templates/*
+!/templates/HANDOFF_TEMPLATE.md
+!/templates/PROJECT_CONTEXT.example.md
+!/templates/CODEX_GLOBAL.example.md
+!/templates/CLAUDE_GLOBAL.example.md
+
+# 기존 경로의 로컬 안내 파일도 제외
+/docs/HANDOFF_*.md
+/docs/PLAN_*.md
+/docs/REVIEW_*.md
+/docs/GameplaySystemsOverview.md
